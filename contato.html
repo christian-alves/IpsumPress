@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
+  <title>Ipsum Press</title>
+</head>
+
+<body>
+
+  <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-black border-nav navbar-shadow">
+    <a class="navbar-brand py-lg-3" href="index.html">
+      <img class="img-fluid logo-height ml-lg-5" src="images\logo\logo-matsuda-press.png" alt="images\logo\logo-matsuda-press">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav pl-10">
+        <a class="nav-item nav-link pt-lg-3 h6 text-white font-weight-normal nav-item-color" href="sobre.html">SOBRE</a>
+        <a class="nav-item nav-link pt-lg-3 h6 text-white font-weight-normal nav-item-color" href="clientes.html">CLIENTES</a>
+        <a class="nav-item nav-link pt-lg-3 h6 text-white font-weight-normal nav-item-color" href="case.html">CASE DE SUCESSO</a>
+        <a class="nav-item nav-link pt-lg-3 h6 text-white font-weight-normal nav-item-color" href="servicos.html">O QUE FAZEMOS</a>
+        <a class="nav-item nav-link pt-lg-3 h6 text-white font-weight-normal nav-item-color" href="imprensa.html">ASSESORIA DE IMPRENSA</a>
+        <a class="nav-item nav-link pt-lg-3 h6 text-white font-weight-normal nav-item-color" href="galeria.html">GALERIA</a>
+        <a class="nav-item nav-link pt-lg-3 h6 text-white font-weight-normal nav-item-color active" href="contato.html">CONTATO</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid banner-height-2 bg-matsuda"></div>
+
+  <div class="container-fluid bg-black">
+    <div class="row px-0 px-lg-5 pt-2 pt-lg-5 pb-3 align-items-center">
+      <div class="col-12 col-lg-6">
+        <p class="h3 font-weight-bold text-white text-center text-lg-left pt-5 pb-3">- CONVERSE COM A GENTE!</p>
+        <form class="pl-lg-5" action="send_contato.php" method="post">
+          <div class="form-group py-2">
+            <input type="nome" class="form-control border-radius-contact py-2 pl-4 text-black" id="nome" placeholder="Nome:" required>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="form-group py-2">
+                <input type="email" class="form-control border-radius-contact py-2 pl-4 text-black" id="email" placeholder="E-mail:" required>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group py-2">
+                <input type="telefone number" class="form-control border-radius-contact py-2 pl-4 text-black phone_with_ddd" id="telefone" placeholder="Telefone:" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group pt-2 pb-0">
+            <input type="assunto" class="form-control border-radius-contact py-2 pl-4 text-black" id="assunto" placeholder="Assunto:" required>
+          </div>
+          <div class="col-10 col-lg-5 position-absolute recado">
+            <p class="bg-orange border-radius-contact py-2 text-white text-center font-weight-bold">Digite seu recado aqui</p>
+          </div>
+          <div class="form-group pt-3">
+            <textarea class="form-control border-radius-contact pt-5" id="mensagem" rows="4" placeholder="Clique e digite aqui sua mensagem:" required></textarea>
+          </div>
+          <div class="form-check form-check-inline text-white pl-4 pb-3" required>
+            Deseja ser respondido por:
+            <label class="form-check-label text-white pl-3">
+              <input class="form-check-input" type="radio" name="respostavia"  id="emailvia" value="Email">Email
+            </label>
+            <label class="form-check-label text-white pl-3">
+              <input class="form-check-input" type="radio" name="respostavia" id="telefonevia" value="Telefone">Telefone
+            </label>
+          </div>
+          <button type="enviar" class="btn btn-primary border-radius-contact w-100 btn-enviar font-weight-bold">ENVIAR</button>
+        </form>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="row pl-lg-5 ml-lg-5 pt-5 pt-lg-0 px-3 px-lg-0 justify-content-right">
+          <div class="col-lg-9 col-12 bg-white border-radius-contact justify-content-right">
+              <p class="text-orange text-center text-lg-left pl-lg-2 pt-3 h5">PREFERE MANDAR UM E-MAIL?</p>
+              <p class="text-black  text-center text-lg-left font-weight-bold pl-lg-2">comunicacao@matsudapressbrasil.com</p>
+              <p class="text-orange text-center text-lg-left pl-lg-2 pt-3 h5">ENTRE EM CONTATO</p>
+              <p class="text-black  text-center text-lg-left font-weight-bold pl-lg-2">+55 11 3881-3745</p>
+              <p class="text-orange text-center text-lg-left pl-lg-2 pt-3 h5">ENTRE EM CONTATO</p>
+              <p class="text-black  text-center text-lg-left font-weight-bold pl-lg-3">+55 11 97390-0935</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./assets/jquery/jquery-3.3.1.min.js"></script>
+  <script src="./assets/popper/popper.min.js"></script>
+  <script src="./assets/bootstrap/bootstrap.min.js"></script>
+  <script src="./assets/backstretch/backstretch.min.js"></script>
+  <script src="./js/main.js" charset="utf-8"></script>
+  <script src="js\jquery.mask.min.js"></script>
+
+</body>
+
+</html>
